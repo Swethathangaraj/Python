@@ -5,12 +5,12 @@ ob.starttls()
 
 ob.login("YourEmail@gmail.com","******")
 
-subject="python message"
-body="this is tutorial of sending email using python script in simple steps"
+subject="Python Message"
+body="This is tutorial of sending Email using Python Script in simple steps"
 
 message="Subject:{}\n\n{}".format(subject,body)
 #print(message)
 listOfAddress=["monkeymindbusiness@gmail.com"]
 ob.sendmail("swetha1823",listOfAddress,message)
-print("send successfully....")
+print("Your Email has been sent successfully....")
 ob.quit()
